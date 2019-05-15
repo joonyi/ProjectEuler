@@ -13,7 +13,7 @@ def perm1(n):
     yield from sub(0)
 
 def perm2(n):
-    a = list(range(n))
+    a = list(range(1, n+1))
     def sub(i):
         if i == n - 1:
             yield tuple(a)
@@ -52,7 +52,7 @@ def perm3(n):
     if type(n) is int:
         if n < 1:
             return []
-        a = list(range(n))
+        a = list(range(1, n+1))
     else:
         a = sorted(n)
     u = [tuple(a)]
@@ -74,9 +74,14 @@ def perm4(n):
     return ac
 
 def Permutation(n):
-    perm = list(permutations([i for i in range(3)]))
+    perm = list(permutations([i for i in range(1, 4)]))
 
     return perm #,perm[n-1]
 
-print(Permutation(3))
-print(list(perm3(4)))
+# print(Permutation(3))
+# print(list(perm3(4)))
+a = list(perm2(9))[17223]
+b = ''
+for i in a:
+    b += str(i)
+print(b)

@@ -1,7 +1,8 @@
 """
 Smallest multiple
 Problem 5
-2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without
+any remainder.
 
 What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
 """
@@ -20,8 +21,9 @@ def lcm(a,b):
 def SmallestMultiple():
     return reduce(lcm, range(1,20+1))
 
-print(SmallestMultiple())
+# print(SmallestMultiple())
 
+gcd(8,12)
 
 """
 Compute the prime factorization of each number from 1 to 20, and 
